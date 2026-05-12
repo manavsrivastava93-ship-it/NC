@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My List - Netflix Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-content">
+      <h1 class="logo">NETFLIX</h1>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tvshows.html">TV Shows</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="mylist.html">My List</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <header class="banner">
+    <div class="banner-content">
+      <h1 class="banner-title">My List</h1>
+      <p class="banner-description">Your saved movies and shows will appear here.</p>
+    </div>
+    <div class="banner-gradient"></div>
+  </header>
+
+  <!-- Content -->
+  <main class="content">
+
+    <div class="row">
+      <h2 class="row-title">Saved Content</h2>
+
+      <div class="row-posters" id="myListContainer">
+        <!-- Items will be added dynamically -->
+      </div>
+
+      <p id="emptyMessage" style="color: gray; padding: 10px;">
+        No items in your list yet.
+      </p>
+    </div>
+
+  </main>
+
+  <script>
+    // Get saved list from localStorage
+    const myList = JSON.parse(localStorage.getItem("myList")) || [];
+
+    const container = document.getElementById("myListContainer");
+    const emptyMessage = document.getElementById("emptyMessage");
+
+    function renderList() {
+      container.innerHTML = "";
+
+      if (myList.length === 0) {
+        emptyMessage.style.display = "block";
+        return;
+      }
+
+      emptyMessage.style.display = "none";
+
+      myList.forEach((videoSrc, index) => {
+        const card = document.createElement("div");
+        card.className = "movie-card";
+
+        card.innerHTML = `
+          <video class="video-thumbnail" preload="metadata">
+            <source src="${videoSrc}" type="video/mp4">
+          </video>
+          <div class="movie-overlay">
+            <button onclick="toggleVideo(this)">▶</button>
+            <button onclick="removeFromList(${index})" style="margin-left:5px;">❌</button>
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    function toggleVideo(btn) {
+      const video = btn.closest('.movie-card').querySelector('video');
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+
+    function removeFromList(index) {
+      myList.splice(index, 1);
+      localStorage.setItem("myList", JSON.stringify(myList));
+      renderList();
+    }
+
+    renderList();
+  </script>
+
+</body>
+</html>

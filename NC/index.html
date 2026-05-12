@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-content">
+      <h1 class="logo">NETFLIX</h1>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tvshows.html">TV Shows</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="mylist.html">My List</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <header class="banner">
+    <div class="banner-content">
+      <h1 class="banner-title">I LOVE YOU</h1>
+      <p class="banner-description">We have been though a lot and I know you won't come back iss baar, And mai tumko Khush dekhna chata bubu, Even if that mean that you'll go, I LOVE YOU. </p>
+      <div class="banner-buttons">
+        <button class="btn btn-play" onclick="openPlayDialog('Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4', 'I LOVE YOU', 'Follow the political rivalries and romance of Queen Elizabeth II\'s reign and the events that shaped the second half of the 20th Century.')">▶ Play</button>
+        <button class="btn btn-info">ℹ More Info</button>
+      </div>
+    </div>
+    <div class="banner-gradient"></div>
+  </header>
+
+  
+
+  <!-- Content Rows -->
+  <main class="content">
+    <!-- Trending Now -->
+    <div class="row">
+      <h2 class="row-title">Trending Now</h2>
+      <div class="row-posters">
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 1">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.10.59 PM (1).jpeg" alt="Image 1">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 2">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.10.59 PM (2).jpeg" alt="Image 2">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 3">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.10.59 PM.jpeg" alt="Image 3">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 4">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.00 PM (1).jpeg" alt="Image 4">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 5">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.00 PM.jpeg" alt="Image 5">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 6">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.01 PM (1).jpeg" alt="Image 6">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Rated -->
+    <div class="row">
+      <h2 class="row-title">Top Rated</h2>
+      <div class="row-posters">
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 7">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.01 PM (2).jpeg" alt="Image 7">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 8">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.01 PM.jpeg" alt="Image 8">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 9">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.02 PM (1).jpeg" alt="Image 9">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 10">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.02 PM.jpeg" alt="Image 10">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 11">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.03 PM (1).jpeg" alt="Image 11">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 12">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.03 PM.jpeg" alt="Image 12">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommended For You -->
+    <div class="row">
+      <h2 class="row-title">Recommended For You</h2>
+      <div class="row-posters">
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 13">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.04 PM (1).jpeg" alt="Image 13">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 14">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.04 PM (2).jpeg" alt="Image 14">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 15">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.04 PM.jpeg" alt="Image 15">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 16">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.05 PM (1).jpeg" alt="Image 16">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 17">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.05 PM.jpeg" alt="Image 17">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+        <div class="movie-card" data-video-src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" data-title="Image 18">
+          <img class="movie-poster" src="Images/WhatsApp Image 2026-05-12 at 10.11.06 PM.jpeg" alt="Image 18">
+          <div class="movie-overlay"><button>▶</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Large Featured Cards Section -->
+    <div class="row">
+      <h2 class="row-title">New & Popular</h2>
+      <div class="row-posters-large">
+        <div class="movie-card-large">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-large">
+            <button>▶</button>
+            <div class="card-info">
+              <p class="card-title">Featured Title</p>
+              <p class="card-rating">★ 8.5/10</p>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card-large">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-large">
+            <button>▶</button>
+            <div class="card-info">
+              <p class="card-title">Featured Title</p>
+              <p class="card-rating">★ 8.2/10</p>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card-large">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-large">
+            <button>▶</button>
+            <div class="card-info">
+              <p class="card-title">Featured Title</p>
+              <p class="card-rating">★ 8.9/10</p>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card-large">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-large">
+            <button>▶</button>
+            <div class="card-info">
+              <p class="card-title">Featured Title</p>
+              <p class="card-rating">★ 7.8/10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid Layout Section -->
+    <div class="row">
+      <h2 class="row-title">Browse All</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="grid-overlay">
+            <button>▶</button>
+          </div>
+        </div>
+        <div class="grid-item">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="grid-overlay">
+            <button>▶</button>
+          </div>
+        </div>
+        <div class="grid-item">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="grid-overlay">
+            <button>▶</button>
+          </div>
+        </div>
+        <div class="grid-item">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="grid-overlay">
+            <button>▶</button>
+          </div>
+        </div>
+        <div class="grid-item">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="grid-overlay">
+            <button>▶</button>
+          </div>
+        </div>
+        <div class="grid-item">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="grid-overlay">
+            <button>▶</button>
+          </div>
+        </div>
+        <div class="grid-item">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="grid-overlay">
+            <button>▶</button>
+          </div>
+        </div>
+        <div class="grid-item">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="grid-overlay">
+            <button>▶</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compact Row (Small Cards) -->
+    <div class="row">
+      <h2 class="row-title">Watch Instantly</h2>
+      <div class="row-posters-small">
+        <div class="movie-card-small">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-small">
+            <button>▶</button>
+          </div>
+        </div>
+        <div class="movie-card-small">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-small">
+            <button>▶</button>
+          </div>
+        </div>
+        <div class="movie-card-small">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-small">
+            <button>▶</button>
+          </div>
+        </div>
+        <div class="movie-card-small">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-small">
+            <button>▶</button>
+          </div>
+        </div>
+        <div class="movie-card-small">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-small">
+            <button>▶</button>
+          </div>
+        </div>
+        <div class="movie-card-small">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-small">
+            <button>▶</button>
+          </div>
+        </div>
+        <div class="movie-card-small">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-small">
+            <button>▶</button>
+          </div>
+        </div>
+        <div class="movie-card-small">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-small">
+            <button>▶</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wide Banner Format -->
+    <div class="row">
+      <h2 class="row-title">Binge-Worthy Series</h2>
+      <div class="row-posters-wide">
+        <div class="movie-card-wide">
+          <video class="video-clip" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-wide">
+            <button>▶</button>
+            <span class="badge">New</span>
+          </div>
+        </div>
+        <div class="movie-card-wide">
+          <video class="video-clip" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-wide">
+            <button>▶</button>
+            <span class="badge hot">HOT</span>
+          </div>
+        </div>
+        <div class="movie-card-wide">
+          <video class="video-clip" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="movie-overlay-wide">
+            <button>▶</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full Width Featured Card -->
+    <div class="row">
+      <h2 class="row-title">Featured Video</h2>
+      <div class="video-banner featured-card">
+        <div class="featured-poster"></div>
+        <div class="video-info">
+          <h3>Big Buck Bunny</h3>
+          <p>A large-scale animated short film showcased with a Netflix-style preview card. Click a play button to open the custom player.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Grid Section -->
+    <div class="row">
+      <h2 class="row-title">Video Collection</h2>
+      <div class="video-grid">
+        <div class="video-card">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="video-play-overlay">
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="video-title">Video 1</div>
+        </div>
+        <div class="video-card">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="video-play-overlay">
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="video-title">Video 2</div>
+        </div>
+        <div class="video-card">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="video-play-overlay">
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="video-title">Video 3</div>
+        </div>
+        <div class="video-card">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="video-play-overlay">
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="video-title">Video 4</div>
+        </div>
+        <div class="video-card">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="video-play-overlay">
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="video-title">Video 5</div>
+        </div>
+        <div class="video-card">
+          <video class="video-thumbnail" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="video-play-overlay">
+            <button class="play-btn">▶</button>
+          </div>
+          <div class="video-title">Video 6</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Horizontal Video Scroll -->
+    <div class="row">
+      <h2 class="row-title">Video Clips</h2>
+      <div class="video-scroll">
+        <div class="video-scroll-item">
+          <video class="video-clip" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="video-play-overlay">
+            <button class="play-btn">▶</button>
+          </div>
+        </div>
+        <div class="video-scroll-item">
+          <video class="video-clip" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="video-play-overlay">
+            <button class="play-btn">▶</button>
+          </div>
+        </div>
+        <div class="video-scroll-item">
+          <video class="video-clip" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="video-play-overlay">
+            <button class="play-btn">▶</button>
+          </div>
+        </div>
+        <div class="video-scroll-item">
+          <video class="video-clip" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="video-play-overlay">
+            <button class="play-btn">▶</button>
+          </div>
+        </div>
+        <div class="video-scroll-item">
+          <video class="video-clip" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="video-play-overlay">
+            <button class="play-btn">▶</button>
+          </div>
+        </div>
+        <div class="video-scroll-item">
+          <video class="video-clip" preload="metadata">
+            <source src="Videos/WhatsApp Video 2026-05-12 at 10.17.53 PM.mp4" type="video/mp4">
+          </video>
+          <div class="video-play-overlay">
+            <button class="play-btn">▶</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="playDialog" class="play-dialog" aria-hidden="true">
+    <div class="play-dialog-backdrop"></div>
+    <div class="play-dialog-panel" role="dialog" aria-modal="true" aria-labelledby="playDialogTitle">
+      <button class="play-dialog-close" aria-label="Close">×</button>
+      <div class="play-dialog-header">
+        <div>
+          <h2 id="playDialogTitle">Playing Now</h2>
+          <p id="playDialogDescription">Enjoy the preview in full-screen style.</p>
+        </div>
+      </div>
+      <video id="playDialogVideo" class="play-dialog-video" playsinline>
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="play-dialog-controls">
+        <button class="control-btn toggle-play" aria-label="Play/Pause">▶</button>
+        <div class="control-progress">
+          <input type="range" class="progress-bar" min="0" max="100" value="0" step="0.1">
+          <div class="time-info">
+            <span class="current-time">0:00</span>
+            <span class="duration-time">0:00</span>
+          </div>
+        </div>
+        <div class="control-actions">
+          <button class="control-btn mute-btn" aria-label="Mute">🔊</button>
+          <button class="control-btn fullscreen-btn" aria-label="Fullscreen">⛶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openPlayDialog(src, title, description) {
+      const dialog = document.getElementById('playDialog');
+      const video = document.getElementById('playDialogVideo');
+      const titleEl = document.getElementById('playDialogTitle');
+      const descEl = document.getElementById('playDialogDescription');
+      const source = video.querySelector('source');
+      const togglePlay = document.querySelector('.toggle-play');
+      const muteBtn = document.querySelector('.mute-btn');
+
+      titleEl.textContent = title || 'Playing Now';
+      descEl.textContent = description || 'Enjoy the preview.';
+      source.src = src;
+      video.load();
+
+      dialog.classList.add('open');
+      dialog.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('dialog-open');
+      video.controls = false;
+      video.play().catch(() => {});
+
+      togglePlay.textContent = '❚❚';
+      muteBtn.textContent = video.muted ? '🔇' : '🔊';
+
+      const fullscreenTarget = dialog;
+      const fullscreen = fullscreenTarget.requestFullscreen || fullscreenTarget.webkitRequestFullscreen || fullscreenTarget.mozRequestFullScreen || fullscreenTarget.msRequestFullscreen;
+      if (fullscreen) {
+        fullscreen.call(fullscreenTarget).catch(() => {});
+      }
+    }
+
+    function closePlayDialog() {
+      const dialog = document.getElementById('playDialog');
+      const video = document.getElementById('playDialogVideo');
+      const source = video.querySelector('source');
+
+      video.pause();
+      source.src = '';
+      video.load();
+      dialog.classList.remove('open');
+      dialog.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('dialog-open');
+
+      if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+        const exitFullscreen = document.exitFullscreen || document.webkitExitFullscreen || document.mozCancelFullScreen || document.msExitFullscreen;
+        if (exitFullscreen) {
+          exitFullscreen.call(document).catch(() => {});
+        }
+      }
+    }
+
+    function formatTime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
+      return `${minutes}:${secs}`;
+    }
+
+    function initPlayerControls() {
+      const video = document.getElementById('playDialogVideo');
+      const playButton = document.querySelector('.toggle-play');
+      const progressBar = document.querySelector('.progress-bar');
+      const currentTime = document.querySelector('.current-time');
+      const durationTime = document.querySelector('.duration-time');
+      const muteButton = document.querySelector('.mute-btn');
+      const fullscreenButton = document.querySelector('.fullscreen-btn');
+
+      function updateProgress() {
+        if (!video.duration) return;
+        const progress = (video.currentTime / video.duration) * 100;
+        progressBar.value = progress;
+        currentTime.textContent = formatTime(video.currentTime);
+        durationTime.textContent = formatTime(video.duration);
+      }
+
+      video.addEventListener('timeupdate', updateProgress);
+      video.addEventListener('loadedmetadata', updateProgress);
+      video.addEventListener('play', () => playButton.textContent = '❚❚');
+      video.addEventListener('pause', () => playButton.textContent = '▶');
+
+      playButton.addEventListener('click', () => {
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+
+      progressBar.addEventListener('input', () => {
+        if (!video.duration) return;
+        const time = (progressBar.value / 100) * video.duration;
+        video.currentTime = time;
+      });
+
+      muteButton.addEventListener('click', () => {
+        video.muted = !video.muted;
+        muteButton.textContent = video.muted ? '🔇' : '🔊';
+      });
+
+      fullscreenButton.addEventListener('click', () => {
+        const fullscreenTarget = document.getElementById('playDialog');
+        const fullscreen = fullscreenTarget.requestFullscreen || fullscreenTarget.webkitRequestFullscreen || fullscreenTarget.mozRequestFullScreen || fullscreenTarget.msRequestFullscreen;
+        if (fullscreen) {
+          fullscreen.call(fullscreenTarget).catch(() => {});
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', initPlayerControls);
+
+    document.querySelector('.play-dialog-close').addEventListener('click', closePlayDialog);
+    document.querySelector('.play-dialog-backdrop').addEventListener('click', closePlayDialog);
+
+    document.querySelectorAll('.movie-overlay button, .movie-overlay-wide button, .video-play-overlay button, .play-btn').forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const container = this.closest('.movie-card, .movie-card-large, .grid-item, .video-card, .video-scroll-item');
+        const source = container ? container.querySelector('video source') : null;
+        const image = container ? container.querySelector('img') : null;
+        const titleText = container ? (container.querySelector('.card-title, .video-title')?.textContent.trim() || image?.alt || 'Preview') : 'Preview';
+        const descText = container ? 'Watch this preview in a Netflix-style player.' : 'Enjoy the preview.';
+
+        const fallbackSrc = container ? container.dataset.videoSrc : null;
+        const fallbackTitle = container ? container.dataset.title : null;
+        if (source && source.src) {
+          openPlayDialog(source.src, titleText, descText);
+        } else if (fallbackSrc) {
+          openPlayDialog(fallbackSrc, fallbackTitle || titleText, descText);
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
